@@ -37,7 +37,7 @@ public class RobotBehaviourScript : MonoBehaviour
         
     }
     // Update is called once per frame
-    void FixeUpdate()
+    void FixedUpdate()
     {
         var myRigidBody = GetComponent<Rigidbody2D>();
         //direction.y = 0;
