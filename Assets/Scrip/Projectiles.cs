@@ -7,7 +7,10 @@ public class Projectiles : MonoBehaviour
     
 {
     [SerializeField] private float speed;
+    [SerializeField] private GameObject toSpawn;
 
+    [SerializeField] private position;
+    [SerializeField] private GameObject EnnemyFollow;
     private Rigidbody myRigidbody;
 
     private void Start()
@@ -16,7 +19,7 @@ public class Projectiles : MonoBehaviour
        
         var RobotGameObject = GameObject.FindWithTag("Player");
         var Projectiles = RobotGameObject.GetComponent<Projectiles>();
-        RobotBehaviourScript.onDeath.AddListener(Die);
+        Instantiate(toSpawn, position , Quaternion.identity);
     }
 
     // Update is called once per frame
