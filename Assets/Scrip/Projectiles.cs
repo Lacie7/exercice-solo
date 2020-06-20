@@ -9,7 +9,7 @@ public class Projectiles : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private GameObject toSpawn;
 
-    [SerializeField] private position;
+    [SerializeField] private Vector2 position;
     [SerializeField] private GameObject EnnemyFollow;
     private Rigidbody myRigidbody;
 
